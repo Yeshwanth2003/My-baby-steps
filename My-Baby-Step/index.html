@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Work space</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body id="bod">
+    <h1 id="top">Work Space</h1>
+    <div id="main">
+      <p id="display"></p>
+    </div>
+    <textarea
+      rows="15"
+      cols="40"
+      placeholder="Enter your text here"
+      id="input"
+    ></textarea
+    ><button onclick="addInput()" class="add">Add</button> <br /><br />
+    <input type="text" placeholder="size......., Eg:50px" id="siz" />
+    <button onclick="setSize()">Set Size</button>
+    <br /><br />
+    <input type="text" placeholder="color" id="col" />
+    <button onclick="setColor()">Set Color</button><br /><br />
+    <input type="text" placeholder="Style" id="sty" />
+    <button onclick="setStyle()">Set Style</button><br /><br />
+
+    <div class="options">
+      <h1
+        style="background-color: white; text-align: center; border-radius: 10px"
+      >
+        Default Stylez
+      </h1>
+      <button onclick="styleBold()" class="button">Bold</button>
+      <button onclick="styleItalic()" class="button">Italic</button>
+
+      <button onclick="styleUnderline()" class="button">Underline</button>
+
+      <br /><br />
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
